@@ -1,4 +1,4 @@
-# Wi-Fi Proximity Radar (RSSI) — Arduino UNO + ESP-01
+# Wi-Fi Proximity Radar (RSSI), Arduino UNO and ESP-01
 
 Learning IoT prototype that estimates the presence/proximity of an obstacle using Wi-Fi signal strength (RSSI) between an Arduino UNO (with an ESP-01 module) and a known access point, with local feedback (LEDs + buzzer) and telemetry to [ThingSpeak](https://thingspeak.com).
 
