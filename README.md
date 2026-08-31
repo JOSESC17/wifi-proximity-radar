@@ -43,6 +43,13 @@ The complete firmware is in [`src/radar_wifi.ino`](src/radar_wifi.ino), and incl
 
 The complete test dataset (exported from ThingSpeak) is available in `data/feeds.csv` — timestamp, raw RSSI, filtered RSSI, and estimated distance per reading.
 
+## Videos
+
+- [Prototype walkthrough](https://youtu.be/RH5jOgd25E0)
+- [Demo clip 1](https://youtube.com/shorts/PMqQQswal_M)
+- [Demo clip 2](https://youtube.com/shorts/fofxZYuFtro)
+
 ## Author
 
 José Salvuchi — [LinkedIn](https://www.linkedin.com/in/jose-salvuchi-3a72b1384/)
+
