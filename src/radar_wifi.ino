@@ -59,7 +59,7 @@ void setup() {
   ESP01.println("AT+CWMODE=1"); ///Le pedimos al ESP01 que se configure para recibir los valores de la red
   delay(1000);
 
-  /// Autenticación y conexión formal a la red local (Intentar conexión hasta lograrlo)
+  /// Autenticación y conexión formal a la red locall
   bool conectado = false;
   while (!conectado) {
     Serial.println("Conectando a Wi-Fi...");
@@ -94,7 +94,7 @@ void setup() {
 }
 
 void loop() {
-  /// Disparo periódico de la consulta de RSSI del AP ya conectado (reemplaza el escaneo bloqueante AT+CWLAP)
+  /// Disparo periódico de la consulta de RSSI del AP ya conectado 
   if (millis() - EscaneoFinal >= IntervaloTiempo) {
     EscaneoFinal = millis();
     ESP01.println("AT+CWJAP?");
@@ -104,7 +104,7 @@ void loop() {
     String incomingText = ESP01.readStringUntil('\n'); 
     
     if (incomingText.startsWith("+CWJAP:")) { 
-      int ultimaComa = incomingText.lastIndexOf(","); ///La respuesta trae formato +CWJAP:"ssid","mac",canal,RSSI, así que el RSSI siempre es el último campo
+      int ultimaComa = incomingText.lastIndexOf(",");
       String TxtRSSI = incomingText.substring(ultimaComa + 1); 
       TxtRSSI.trim();
       int RSSI = TxtRSSI.toInt(); 
